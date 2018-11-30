@@ -59,4 +59,9 @@ notebook.light.py    notebook.percent.py
 ± |master ?:1 ✗| → jupytext notebook.percent.2.py --to notebook --update -o notebook.2.ipynb
 [jupytext] Converting 'notebook.percent.2.py' to 'notebook.2.ipynb' (destination file updated)
 
+ 2018-11-30 16:15:36 ⌚  dell13 in ~/notebooks/totext/jupytext
+± |master ?:1 ✗| → cp notebook.ipynb notebook.3.ipynb; jupytext notebook.3.md --to notebook --update -o notebook.3.ipynb
+[jupytext] Converting 'notebook.3.md' to 'notebook.3.ipynb' (destination file updated)
+
+
 ```
