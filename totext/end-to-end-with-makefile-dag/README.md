@@ -12,3 +12,14 @@ The workflow goes as follows:
 - Export the final notebook as markdown for code review and searchability
 - Export the notebook as html for portability
 - Final step (not implemented): save/move the .py .ipynb .md .html artifacts
+
+
+``` bash
+# to start:
+make clean
+# then start the demo, follow the logged directions
+make
+# manually kill the jupyter server at this point `Ctrl-C` and rerun `make`
+make
+# w00t!
+```
