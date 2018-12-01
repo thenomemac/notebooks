@@ -12,7 +12,6 @@ demo-exec.ipynb: demo-edited.ipynb
 	@echo "Executing final notebook draft end to end..."
 	jupyter nbconvert --to notebook --execute $< --output $@
 
-
 demo-edited.ipynb: demo-edited.py demo-editable.ipynb
 	@echo "Copying the notebook so user can easily diff the results of this pipeline..."
 	cp demo-editable.ipynb $@
