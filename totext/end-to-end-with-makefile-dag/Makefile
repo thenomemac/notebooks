@@ -31,9 +31,19 @@ demo-editable.ipynb:
 	@echo "Creating a notebook for the user to edit..."
 	@echo "Feel free to manually edit and run cells at this point, dev workflow..."
 	cp demo-template.ipynb $@
+	@echo "Shutdown the notebook server to continue..."
+	bash -c 'jupyter notebook $@; echo "user shutdown"'
+	@echo "To continue run `make` again..."
 
 clean:
 	rm -rf demo-editable.ipynb demo-editable.py demo-edited.py demo-edited.ipynb demo-exec.ipynb demo-exec.md demo-exec.html
 
 browser: demo-exec.html
 	chromium $< || chrome-browser $< || firefox $< || xdg-open $<
+
+install:
+	pip install jupyter jupytext
+
+install-conda:
+	conda install jupyter
+	conda install -c conda-forge jupytext

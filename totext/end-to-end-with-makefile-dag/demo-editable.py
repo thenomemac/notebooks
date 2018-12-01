@@ -20,8 +20,9 @@
 print("hi")
 
 # %%
-# go ahead and edit this code cell with python code and see what happens
-print("in jupyter")
+# add python code in this cell from within jupyter gui and execute only this cell to demo the workflow
+print("browser")
+!pwd
 
 # %%
-
+# add python code in this cell from within text editor to demo the workflow
