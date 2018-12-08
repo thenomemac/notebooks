@@ -21,8 +21,6 @@ print("hi")
 
 # %%
 # add python code in this cell from within jupyter gui and execute only this cell to demo the workflow
-print("browser")
-!pwd
 
 # %%
 # add python code in this cell from within text editor to demo the workflow

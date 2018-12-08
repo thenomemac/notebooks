@@ -19,7 +19,5 @@ The workflow goes as follows:
 make clean
 # then start the demo, follow the logged directions
 make
-# manually kill the jupyter server at this point `Ctrl-C` and rerun `make`
-make
-# w00t!
+# optional: manually run edit in jupyter and rerun make a second time, see logs from `make` for more details
 ```
